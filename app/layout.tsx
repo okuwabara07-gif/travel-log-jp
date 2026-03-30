@@ -2,9 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 export const metadata: Metadata = {
   title: '旅行LOG | K-Beauty Portal',
-  description: '旅行・ホテル・旅行グッズの最新比較ランキング',
-  openGraph: { title: '旅行LOG', description: '旅行・ホテル・旅行グッズの最新比較ランキング', siteName: 'K-Beauty Portal', type: 'website' },
-  twitter: { card: 'summary_large_image', title: '旅行LOG', description: '旅行・ホテル・旅行グッズの最新比較ランキング', site: '@beauty_note_j' },
+  description: '旅行の最新比較ランキング・口コミ・おすすめ商品',
+  twitter: { card: 'summary_large_image', site: '@beauty_note_j', creator: '@beauty_note_j' },
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
