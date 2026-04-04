@@ -1,9 +1,8 @@
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://example.vercel.app'
   return {
     rules: { userAgent: '*', allow: '/' },
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: `https://${process.env.NEXT_PUBLIC_SITE_URL || 'localhost:3000'}/sitemap.xml`,
   }
 }
